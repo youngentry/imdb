@@ -446,7 +446,7 @@ h2 {
 .episodes .content > ul {
     display: flex;
     gap: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .episodes .content > ul .box {
     display: flex;
