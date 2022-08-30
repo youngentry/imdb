@@ -1,0 +1,453 @@
+body {
+    background: #1f1f1f;
+    color: #fff;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* 
+.header
+ */
+.header {
+    background: #121212;
+    color: #fff;
+}
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+.header h1 {
+    position: relative;
+    font-size: 0px;
+    line-height: 60px;
+}
+
+.header h1 img {
+    height: 40px;
+}
+.header nav > ul {
+    display: flex;
+}
+.header form {
+    position: relative;
+    display: flex;
+    width: 55%;
+    align-items: center;
+    margin-left: 70px;
+}
+.header input {
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: none;
+}
+.header button {
+    position: absolute;
+    right: 5px;
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+.header .pro {
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: auto;
+}
+.header .pro:hover {
+    background: #333;
+}
+.header .pro img {
+    height: 18px;
+}
+.header .right {
+    gap: 10px;
+}
+.header .right a {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.header .right a:hover {
+    background: #333;
+}
+.header .menuBtn i {
+    font-size: 20px;
+    vertical-align: -40%;
+    margin-left: 10px;
+}
+/* 
+.header
+ */
+
+/* 
+.mainVisual
+ */
+.mainVisual {
+    color: #fff;
+    margin-bottom: 100px;
+}
+.mainVisual .index {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 15px 0 5px 0;
+    line-height: 30px;
+}
+.mainVisual .index .left {
+    font-size: 15px;
+    color: rgb(200, 200, 200);
+}
+.mainVisual .index .left span {
+    margin: 0 5px;
+    font-size: 13px;
+    vertical-align: 2%;
+}
+.mainVisual .index .left i {
+    font-size: 15px;
+}
+.mainVisual .index .right ul {
+    display: flex;
+    gap: 20px;
+}
+.mainVisual .index .right i {
+    font-size: 19px;
+    vertical-align: -15%;
+}
+.mainVisual .index .right li {
+    position: relative;
+}
+.mainVisual .index .right li::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 1px;
+    transform: translateY(-50%);
+    height: 50%;
+    background: #555;
+}
+.mainVisual .index .right li:last-of-type::after {
+    display: none;
+}
+.mainVisual .index .right li a {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.mainVisual .index .right li a:hover {
+    background: #333;
+}
+.mainVisual .content .info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.mainVisual .content .left h2 {
+    font-size: 36px;
+    text-indent: -2px;
+}
+.mainVisual .content .left p {
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #ddd;
+}
+.mainVisual .content .left p span {
+    position: relative;
+    margin-right: 15px;
+}
+.mainVisual .content .left p span ~ span::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -9px;
+    height: 2px;
+    width: 2px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #ddd;
+}
+.mainVisual .content .right {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+}
+.mainVisual .content .right .box {
+    display: flex;
+}
+.mainVisual .content .right > div {
+    flex: 1;
+}
+.mainVisual .visual {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.mainVisual .visual .left figure {
+    background: url(../img/mainVisual/m01.jpg) no-repeat center center/cover;
+    height: 400px;
+    width: 290px;
+}
+.mainVisual .visual .center figure {
+    background: url(../img/mainVisual/m02.jpg) no-repeat center center/cover;
+    height: 400px;
+    width: 900px;
+}
+/* .mainVisual .visual .right {
+    display: flex;
+    flex-direction: column;
+} */
+.mainVisual .visual figure {
+    flex: 1;
+    border-radius: 5px;
+}
+.mainVisual .des {
+    display: flex;
+}
+.mainVisual .des .left {
+    flex: 5;
+}
+.mainVisual .des .right {
+    flex: 2;
+}
+.mainVisual .des .genre {
+    padding-bottom: 20px;
+}
+.mainVisual .des .genre ul {
+    display: flex;
+    gap: 10px;
+}
+.mainVisual .des .genre a {
+    padding: 5px 10px 7px 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.mainVisual .des .genre a:hover {
+    background: #555;
+}
+.mainVisual .des .storyline {
+    width: 900px;
+    font-weight: 300;
+    line-height: 1.35;
+    padding-bottom: 30px;
+}
+.mainVisual .des .storyline strong {
+    font-size: 17px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #fff;
+}
+.mainVisual .des .storyline p {
+    font-size: 13px;
+    font-weight: 300;
+    padding-top: 0;
+}
+.mainVisual .des .produce {
+    display: flex;
+    gap: 30px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+.mainVisual .des .produce figure {
+    border-radius: 5px;
+}
+.mainVisual .des .produce > div {
+    position: relative;
+}
+.mainVisual .des .creator {
+    flex: 1;
+}
+.mainVisual .des .stars {
+    flex: 3;
+}
+.mainVisual .des .info {
+    flex: 1;
+}
+.mainVisual .des .produce > div ~ div::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    height: 100%;
+    width: 1px;
+    background: #555;
+}
+.mainVisual .des > div strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #fff;
+}
+.mainVisual .des figure {
+    margin-bottom: 5px;
+}
+.mainVisual .des .creator figure {
+    background: url(../img/mainVisual/Vince-Gilligan-Sony.jpg) no-repeat center
+        center/cover;
+    height: 100px;
+    width: 150px;
+}
+.mainVisual .des .produce .info img {
+    height: 30px;
+}
+.mainVisual .des .stars .box {
+    display: flex;
+    gap: 10px;
+}
+.mainVisual .des a {
+    color: #ddd;
+    font-size: 13px;
+}
+.mainVisual .des .creator a:hover,
+.mainVisual .des .stars a:hover {
+    text-decoration: underline;
+}
+.mainVisual .des .star figure {
+    height: 100px;
+    width: 150px;
+}
+.mainVisual .des .star01 figure {
+    background: url(../img/mainVisual/bryan02.jpg) no-repeat center center/cover;
+}
+.mainVisual .des .star02 figure {
+    background: url(../img/mainVisual/aaron.jpg) no-repeat center center/cover;
+}
+.mainVisual .des .star03 figure {
+    background: url(../img/mainVisual/anna02.jpg) no-repeat center center/cover;
+}
+.mainVisual .des .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.mainVisual .des .info p {
+    position: relative;
+    font-weight: 100;
+    padding-left: 10px;
+}
+.mainVisual .des .info p::before {
+    content: "";
+    bottom: 5px;
+    left: 0;
+    position: absolute;
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #ddd;
+}
+.mainVisual .des .info a:last-of-type {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: auto;
+    padding: 5px 10px 7px 10px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    color: #ddd;
+    border-radius: 5px;
+}
+.mainVisual .des .info a:last-of-type:hover {
+    background: #555;
+}
+.mainVisual .topRate {
+    padding: 30px;
+    border: 1px solid #555;
+    border-radius: 10px;
+}
+.mainVisual .topRate strong {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.mainVisual .topRate > p {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #ddd;
+}
+.mainVisual .topRate .awards p {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.mainVisual .topRate .awards ul {
+    display: flex;
+    gap: 60px;
+    text-align: center;
+}
+.mainVisual .topRate .awards figure {
+    background: url(../img/mainVisual/pen_america.png) no-repeat center
+        center/cover;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
+}
+.mainVisual .awards a {
+    font-size: 13px;
+    font-weight: 300;
+}
+.mainVisual .awards a:hover {
+    text-decoration: underline;
+}
+/* 
+.mainVisual
+ */
+
+/* 
+.episodes
+ */
+.episodes {
+}
+/* 
+.episodes
+ */
+
+/* 
+.c02
+ */
+.c02 {
+    background: #ddd;
+}
+/* 
+.c02
+ */
+
+/* 
+.c03
+ */
+.c03 {
+    background: #fff;
+}
+/* 
+.c03
+ */
+
+/* 
+.c04
+ */
+.c04 {
+    background: #ddd;
+}
+/* 
+.c04
+ */
+
+/* 
+.c05
+ */
+.c05 {
+    background: #fff;
+}
+/* 
+.c05
+ */
