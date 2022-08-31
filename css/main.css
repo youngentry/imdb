@@ -1,5 +1,5 @@
 body {
-    background: #1f1f1f;
+    background: #1c1c1c;
     color: #fff;
 }
 
@@ -10,10 +10,23 @@ body {
 
 h2 {
     font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-
+h2 i {
+    font-size: 20px;
+    vertical-align: 15%;
+    transition: 0.2s;
+}
+h2:hover i {
+    color: #f5c518;
+    transform: translateX(5px);
+}
+h2 span {
+    font-size: 11px;
+    font-weight: 300px;
+    color: #999;
+    vertical-align: 130%;
+}
 /* 
 .header
  */
@@ -46,6 +59,7 @@ h2 {
     align-items: center;
     margin-left: 70px;
 }
+
 .header input {
     height: 30px;
     width: 100%;
@@ -56,9 +70,11 @@ h2 {
 .header button {
     position: absolute;
     right: 5px;
+    bottom: 0px;
     font-size: 20px;
     background: none;
     border: none;
+    cursor: pointer;
 }
 .header .pro {
     margin-left: 10px;
@@ -96,7 +112,7 @@ h2 {
  */
 .mainVisual {
     color: #fff;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 .mainVisual .index {
     display: flex;
@@ -109,6 +125,7 @@ h2 {
     font-size: 15px;
     color: rgb(200, 200, 200);
 }
+
 .mainVisual .index .left span {
     margin: 0 5px;
     font-size: 13px;
@@ -156,6 +173,7 @@ h2 {
 .mainVisual .content .left h2 {
     font-size: 36px;
     text-indent: -2px;
+    margin-bottom: 10px;
 }
 .mainVisual .content .left p {
     font-size: 13px;
@@ -191,17 +209,20 @@ h2 {
 .mainVisual .visual {
     display: flex;
     gap: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+}
+.mainVisual .visual a:hover {
+    filter: brightness(0.9);
 }
 .mainVisual .visual .left figure {
     background: url(../img/mainVisual/m01.jpg) no-repeat center center/cover;
-    height: 350px;
-    width: 270px;
+    height: 500px;
+    width: 320px;
 }
 .mainVisual .visual .center figure {
     background: url(../img/mainVisual/m02.jpg) no-repeat center center/cover;
-    height: 350px;
-    width: 920px;
+    height: 500px;
+    width: 870px;
 }
 /* .mainVisual .visual .right {
     display: flex;
@@ -211,6 +232,7 @@ h2 {
     flex: 1;
     border-radius: 5px;
 }
+
 .mainVisual .des {
     display: flex;
 }
@@ -229,6 +251,7 @@ h2 {
 }
 .mainVisual .des .genre a {
     padding: 5px 10px 7px 10px;
+    font-weight: 300;
     border: 1px solid #ddd;
     border-radius: 20px;
 }
@@ -236,14 +259,15 @@ h2 {
     background: #444;
 }
 .mainVisual .des .storyline {
-    width: 900px;
+    width: 890px;
     font-weight: 300;
     line-height: 1.35;
     padding-bottom: 30px;
 }
 .mainVisual .des .storyline strong {
-    font-size: 17px;
-    margin-bottom: 0;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 5px;
     padding-bottom: 0;
     color: #fff;
 }
@@ -279,7 +303,7 @@ h2 {
     left: -15px;
     height: 100%;
     width: 1px;
-    background: #444;
+    background: #333;
 }
 .mainVisual .des > div strong {
     display: block;
@@ -289,7 +313,7 @@ h2 {
     color: #fff;
 }
 .mainVisual .des figure {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 .mainVisual .des .creator figure {
     background: url(../img/mainVisual/Vince-Gilligan-Sony.jpg) no-repeat center
@@ -367,7 +391,7 @@ h2 {
     height: 60px;
     padding: 20px;
     text-align: center;
-    border: 1px solid #444;
+    border: 1px solid #333;
     overflow: hidden;
     transition: 0.5s;
 }
@@ -430,18 +454,10 @@ h2 {
 .episodes
  */
 .episodes {
+    margin-bottom: 120px;
 }
-.episodes h2 {
-    margin-bottom: 20px;
-}
-.episodes h2 i {
-    font-size: 20px;
-    vertical-align: 15%;
-    transition: 0.2s;
-}
-.episodes h2:hover i {
-    color: #f5c518;
-    transform: translateX(5px);
+.episodes .content {
+    margin-bottom: 50px;
 }
 .episodes .content > ul {
     display: flex;
@@ -454,7 +470,8 @@ h2 {
 }
 .episodes .content > ul > li {
     padding: 20px;
-    border: 1px solid #555;
+    background: #121212e3;
+    border-radius: 10px;
     gap: 30px;
 }
 .episodes .content figure {
@@ -462,10 +479,7 @@ h2 {
     height: 150px;
     width: 140px;
     border-radius: 10px;
-}
-.episodes .container .left,
-.episodes .container .right {
-    flex: 1;
+    margin-right: 15px;
 }
 .episodes .right > p {
     display: block;
@@ -498,8 +512,8 @@ h2 {
 .episodes .right > p {
     display: inline-block;
     margin-bottom: 5px;
-    padding: 5px 15px 5px 15px;
-    font-size: 11px;
+    padding: 4px 15px 4px 15px;
+    font-size: 12px;
     font-weight: 500;
     color: #000;
     background: #f5c518;
@@ -534,46 +548,351 @@ h2 {
 .episodes .filter a i {
     font-size: 9px;
 }
+.episodes .moments {
+    display: flex;
+    gap: 30px;
+    line-height: 1.4;
+}
+.episodes .moments .left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.episodes .moments h3 {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.episodes .moments h3 span {
+    font-size: 25px;
+}
+.episodes .moments h3::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    height: 2px;
+    width: 30px;
+    background: #f5c518;
+    border-radius: 4px;
+}
+.episodes .moments p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ddd;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.episodes .moments a span {
+    font-size: 13px;
+    font-weight: 100;
+    color: #ddd;
+    vertical-align: -5%;
+}
+.episodes .moments a span:hover {
+    text-decoration: underline;
+}
+.episodes .moments img {
+    font-size: 0;
+    height: 28px;
+}
+.episodes .moments i {
+    font-size: 13px;
+}
 /* 
 .episodes
  */
 
 /* 
-.videos
+.photos
  */
-.videos {
-    height: 100vh;
+.photos {
+    margin-bottom: 120px;
+}
+.photos ul {
+    display: flex;
+    gap: 30px;
+}
+.photos figure {
+    background: url(../img/gallery/g04.jpg) no-repeat center center/cover;
+    height: 300px;
+    width: calc(1110px / 4);
+}
+.photos figure:hover {
+    filter: brightness(0.9);
 }
 /* 
-.videos
+.photos
  */
 
 /* 
-.c03
+.cast
  */
-.c03 {
+.cast {
+    margin-bottom: 120px;
+}
+.cast ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.cast li {
+    display: flex;
+    padding: 5px;
+    background: #141414;
+    border-radius: 10px;
+    width: calc(1200px / 2 - 15px);
+}
+.cast li figure {
+    background: url(../img/cast/bryan.jpg) no-repeat center center/cover;
+    height: 110px;
+    width: 80px;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+.cast li .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.618;
+}
+.cast li strong {
+    font-size: 19px;
+}
+.cast li span {
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(200, 200, 200);
+}
+.cast li p {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(200, 200, 200);
+}
+.cast li i {
+    font-size: 13px;
+    color: rgb(200, 200, 200);
+}
+.cast li a:hover {
+    text-decoration: underline;
+}
+/* 
+.cast
+ */
+
+/* 
+.reviews */
+.reviews {
+    margin-bottom: 100px;
+}
+.reviews .content ul {
+    display: flex;
+    gap: 30px;
+}
+.reviews .content ul > li {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    line-height: 1.35;
+    flex: 1;
+}
+.reviews .content .top {
+    display: flex;
+    justify-content: space-between;
+}
+.reviews .content .top span {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 3px 15px 3px 15px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #000;
+    background: #f5c518;
+    border-radius: 5px;
+}
+.reviews .content .top i {
+    font-size: 20px;
+    color: rgb(247, 247, 247);
+}
+.reviews .content h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+.reviews .content h3:hover {
+    text-decoration: underline;
+}
+.reviews .content p {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(200, 200, 200);
+}
+.reviews .content .txt {
+    margin-bottom: 20px;
+}
+.reviews .content .evaluate {
+    display: flex;
+    vertical-align: middle;
+}
+.reviews .content .evaluate a:first-of-type {
+    margin-right: 20px;
+}
+.reviews .content .evaluate a:last-of-type i {
+    color: #f5c518;
+}
+.reviews .info {
+    display: flex;
+    justify-content: space-between;
+}
+.reviews .content .evaluate i {
+    font-size: 20px;
+    margin-right: 3px;
+}
+.reviews .content .evaluate a:first-child:hover .heart {
+    color: rgb(255, 76, 76);
+    transform: scale(1.1);
+}
+.reviews .content .ellipsis:hover {
+    background: #555;
+    border-radius: 50%;
+}
+
+.reviews .content .evaluate span {
+    font-size: 13px;
+    font-weight: 300;
+    vertical-align: 18%;
+}
+.reviews .content .userName {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(200, 200, 200);
+}
+.reviews .content .userName a {
+    color: #5fafff;
+}
+.reviews .content .userName a:hover {
+    text-decoration: underline;
+}
+.reviews .content .userName a::after {
+    content: "";
+    display: inline-block;
+    margin: 0 5px 0 8px;
+    width: 3px;
+    height: 3px;
     background: #fff;
+    border-radius: 50%;
+    vertical-align: 22%;
+    cursor: default;
 }
 /* 
-.c03
- */
+.reviews 
+*/
 
 /* 
-.c04
- */
-.c04 {
-    background: #ddd;
+.similar 
+*/
+.similar ul {
+    display: flex;
+    gap: 30px;
 }
-/* 
-.c04
- */
+.similar ul > li {
+    flex: 1;
+    background: #131313;
+    border-radius: 10px;
+}
+.similar ul img {
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.similar ul img:hover {
+    filter: brightness(0.9);
+}
+.similar .info {
+    padding: 15px;
+}
+.similar .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.similar h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.similar h3:hover {
+    text-decoration: underline;
+}
+.similar .title .rate {
+    font-size: 13px;
+    vertical-align: 100%;
+}
+.similar .title .rate i {
+    color: #f5c518;
+}
+.similar .genre {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(200, 200, 200);
+}
+.similar .genre span ~ span::before {
+    content: "";
+    display: inline-block;
+    margin: 0 5px 0 1px;
+    width: 2px;
+    height: 2px;
+    background: rgb(200, 200, 200);
+    border-radius: 50%;
+    vertical-align: 30%;
+}
+.similar .stars {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.35;
+    margin-bottom: 10px;
+}
+.similar .stars span {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+.similar .stars a {
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 100;
+    color: #5fafff;
+}
+.similar .stars a:hover {
+    text-decoration: underline;
+}
+.similar .btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+}
+.similar .btn a {
+    flex: 1;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 5px 15px 5px 15px;
+    background: #313131;
+    border-radius: 5px;
+}
+.similar .btn a:hover {
+    background: #444;
+}
+.similar .btn i {
+    vertical-align: -5%;
+}
 
 /* 
-.c05
- */
-.c05 {
-    background: #fff;
+.similar 
+*/
+
+footer {
+    height: 500vh;
 }
-/* 
-.c05
- */
