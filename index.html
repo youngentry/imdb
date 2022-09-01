@@ -34,7 +34,7 @@
                         <ul class="right">
                             <li><a href="">워치리스트</a></li>
                             <li><a href="">로그인</a></li>
-                            <li><a href="">EN</a></li>
+                            <li><a href="">KR</a></li>
                         </ul>
                         <li class="menuBtn">
                             <a href=""><i class="xi-bars"></i></a>
@@ -93,8 +93,8 @@
                                     <div class="imdbRate">
                                         <!-- <p>IMDb 평점</p> -->
                                         <div class="box">
-                                            <i>icon</i>
-                                            <p>9.5 <span>/10</span></p>
+                                            <i class="xi-star star"></i>
+                                            <p><span>9.5</span> / 10</p>
                                         </div>
                                     </div>
                                     <!-- <div class="yourRate">
@@ -107,8 +107,16 @@
                                     <div class="popularity">
                                         <!-- <p>인기순위</p> -->
                                         <div class="box">
-                                            <i>icon</i>
-                                            <p>10 <i>downicon</i></p>
+                                            <i
+                                                class="xi-trending-down tDown"
+                                            ></i>
+                                            <p>10</p>
+                                            <span
+                                                ><i
+                                                    class="xi-caret-down-min cDown"
+                                                ></i
+                                                >2
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -116,54 +124,23 @@
                             <div class="visual">
                                 <div class="left">
                                     <a href="">
-                                        <figure></figure>
+                                        <figure>
+                                            <div class="bookmark"></div>
+                                        </figure>
                                     </a>
                                 </div>
                                 <div class="center">
                                     <a href="">
                                         <figure></figure>
+                                        <div class="inner">
+                                            <div>
+                                                <i class="xi-play"></i>
+                                            </div>
+                                            <p>Play trailer</p>
+                                            <span>0:31</span>
+                                        </div>
                                     </a>
                                 </div>
-                                <!-- <div class="right">
-                                    <div class="imdbRate">
-                                        <p>IMDb 평점</p>
-                                        <div class="box">
-                                            <i>icon</i>
-                                            <p>9.5 <span>/10</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="yourRate">
-                                        <p>당신의 평점</p>
-                                        <div class="box">
-                                            <i>icon</i>
-                                            <p>별세개</p>
-                                        </div>
-                                    </div>
-                                    <div class="popularity">
-                                        <p>인기순위</p>
-                                        <div class="box">
-                                            <i>icon</i>
-                                            <p>
-                                                10 <i>downicon</i>
-                                                <span>2</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- <div class="right">
-                                    <figure>
-                                        <i class="xi-library-video"></i
-                                        ><span>84 VIDEOS</span>
-                                    </figure>
-                                    <figure>
-                                        <i class="xi-image-o"></i>
-                                        <span>99+ PHOTOS</span>
-                                    </figure>
-                                    <figure>
-                                        <i class="xi-airplay"></i>
-                                        <span>HIGHLIGHTS</span>
-                                    </figure>
-                                </div> -->
                             </div>
                             <div class="des">
                                 <div class="left">
@@ -244,14 +221,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="right">
-                                    <div class="watchlist">
-                                        Add to Watchlist
-                                    </div>
-                                    <div class="reviews">
-                                        4.5K User reviews 181 Critic reviews
-                                    </div>
-                                </div> -->
                             </div>
                             <div class="topRate on">
                                 <strong
@@ -315,7 +284,7 @@
                         <div class="content">
                             <ul>
                                 <li>
-                                    <div class="box">
+                                    <div class="box box01">
                                         <div class="left">
                                             <a href="">
                                                 <figure></figure>
@@ -347,7 +316,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="box">
+                                    <div class="box box02">
                                         <div class="left">
                                             <a href="">
                                                 <figure></figure>
@@ -378,7 +347,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="box">
+                                    <div class="box box03">
                                         <div class="left">
                                             <a href="">
                                                 <figure></figure>
@@ -466,8 +435,8 @@
                 </section>
                 <!-- .episodes -->
 
-                <!-- .photos -->
-                <section class="photos">
+                <!-- .gallery -->
+                <section class="gallery">
                     <div class="container">
                         <a href="">
                             <h2>
@@ -477,31 +446,68 @@
                         </a>
                         <div class="content">
                             <ul>
-                                <li>
+                                <li class="photo photo01">
                                     <a href="">
                                         <figure></figure>
+                                        <div class="inner">
+                                            <strong>Breaking Bad</strong>
+                                            <p>
+                                                <span>Bryan Cranston</span>
+                                                in
+                                                <span>
+                                                    Breaking Bad (2008)
+                                                </span>
+                                            </p>
+                                        </div>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="photo photo02">
                                     <a href="">
                                         <figure></figure>
+                                        <div class="inner">
+                                            <strong>Breaking Bad</strong>
+                                            <p>
+                                                <span>Bryan Cranston</span>
+                                                in<span>
+                                                    Breaking Bad (2008)
+                                                </span>
+                                            </p>
+                                        </div>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="photo photo03">
                                     <a href="">
                                         <figure></figure>
+                                        <div class="inner">
+                                            <strong>Breaking Bad</strong>
+                                            <p>
+                                                <span>Bryan Cranston</span>
+                                                in<span>
+                                                    Breaking Bad (2008)
+                                                </span>
+                                            </p>
+                                        </div>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="photo photo04">
                                     <a href="">
                                         <figure></figure>
+                                        <div class="inner">
+                                            <strong>Breaking Bad</strong>
+                                            <p>
+                                                <span>Bryan Cranston</span>
+                                                in<span>
+                                                    Breaking Bad (2008)
+                                                </span>
+                                            </p>
+                                        </div>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </section>
-                <!-- .photos -->
+                <!-- .gallery -->
 
                 <!-- .cast -->
                 <section class="cast">
@@ -838,6 +844,7 @@
                                 <li>
                                     <a href="">
                                         <figure>
+                                            <div class="bookmark"></div>
                                             <img
                                                 src="./img/similar/better-call-saul.jpg"
                                                 alt=""
@@ -872,11 +879,11 @@
                                         </div>
                                         <div class="btn">
                                             <a href="" class="trailer"
-                                                >Trailer <i class="xi-play"></i
+                                                >트레일러 <i class="xi-play"></i
                                             ></a>
                                             <a href="" class="addWatch"
-                                                >Watchlist
-                                                <div class="xi-plus-min"></div
+                                                >워치리스트
+                                                <i class="xi-plus-min"></i
                                             ></a>
                                         </div>
                                     </div>
@@ -884,6 +891,7 @@
                                 <li>
                                     <a href="">
                                         <figure>
+                                            <div class="bookmark"></div>
                                             <img
                                                 src="./img/similar/el-camio-a-breaking-bad-movie.jpg"
                                                 alt=""
@@ -918,11 +926,11 @@
                                         </div>
                                         <div class="btn">
                                             <a href="" class="trailer"
-                                                >Trailer <i class="xi-play"></i
+                                                >트레일러 <i class="xi-play"></i
                                             ></a>
                                             <a href="" class="addWatch"
-                                                >Watchlist
-                                                <div class="xi-plus-min"></div
+                                                >워치리스트
+                                                <i class="xi-plus-min"></i
                                             ></a>
                                         </div>
                                     </div>
@@ -930,6 +938,7 @@
                                 <li>
                                     <a href="">
                                         <figure>
+                                            <div class="bookmark"></div>
                                             <img
                                                 src="./img/similar/game-of-thrones.jpg"
                                                 alt=""
@@ -964,11 +973,11 @@
                                         </div>
                                         <div class="btn">
                                             <a href="" class="trailer"
-                                                >Trailer <i class="xi-play"></i
+                                                >트레일러 <i class="xi-play"></i
                                             ></a>
                                             <a href="" class="addWatch"
-                                                >Watchlist
-                                                <div class="xi-plus-min"></div
+                                                >워치리스트
+                                                <i class="xi-plus-min"></i
                                             ></a>
                                         </div>
                                     </div>
@@ -976,6 +985,7 @@
                                 <li>
                                     <a href="">
                                         <figure>
+                                            <div class="bookmark"></div>
                                             <img
                                                 src="./img/similar/stranger-things.jpg"
                                                 alt=""
@@ -1010,11 +1020,11 @@
                                         </div>
                                         <div class="btn">
                                             <a href="" class="trailer"
-                                                >Trailer <i class="xi-play"></i
+                                                >트레일러 <i class="xi-play"></i
                                             ></a>
                                             <a href="" class="addWatch"
-                                                >Watchlist
-                                                <div class="xi-plus-min"></div
+                                                >워치리스트
+                                                <i class="xi-plus-min"></i
                                             ></a>
                                         </div>
                                     </div>
@@ -1029,7 +1039,109 @@
 
             <!-- .footer -->
             <footer class="footer">
-                <div class="container"></div>
+                <div class="container">
+                    <div class="content">
+                        <div class="left">
+                            <div class="top">
+                                <h3>Office</h3>
+                                <address>
+                                    <span>SEATTLE</span>
+                                    <p>5th & Madison Condos 909 5th Ave</p>
+                                    <p>Seattle, WA 98164</p>
+                                </address>
+                            </div>
+                            <div class="bottom">
+                                <h3>Follow Us</h3>
+                                <ul class="sns">
+                                    <li>
+                                        <a href="">
+                                            <i class="xi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="xi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="xi-twich"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="xi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="xi-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h3>Services</h3>
+                            <ul class="services">
+                                <li>
+                                    <a href=""> IMDb App 다운로드 </a>
+                                </li>
+                                <li>
+                                    <a href=""> 지원 </a>
+                                </li>
+                                <li>
+                                    <a href=""> ImDbPro </a>
+                                </li>
+                                <li>
+                                    <a href=""> 박스 오피스 Mojo </a>
+                                </li>
+                                <li>
+                                    <a href=""> IMDb 개발 정보 </a>
+                                </li>
+                                <li>
+                                    <a href=""> 언론 보도 </a>
+                                </li>
+                                <li>
+                                    <a href=""> 홍보 </a>
+                                </li>
+                                <li>
+                                    <a href=""> 구인 정보 </a>
+                                </li>
+                                <li>
+                                    <a href=""> 이용 약관 </a>
+                                </li>
+                                <li>
+                                    <a href=""> 개인 정보 정책 </a>
+                                </li>
+                                <li>
+                                    <a href=""> 관심 기반 광고 </a>
+                                </li>
+                                <li>
+                                    <a href="">영화</a>
+                                </li>
+                                <li>
+                                    <a href="">TV쇼</a>
+                                </li>
+                                <li>
+                                    <a href="">모든 영상</a>
+                                </li>
+                                <li>
+                                    <a href="">수상내역 & 이벤트</a>
+                                </li>
+                                <li>
+                                    <a href="">커뮤니티</a>
+                                </li>
+                                <li>
+                                    <a href="">유명한 사람들</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        &copy; 1990-2022 by IMDb.com, Inc.
+                    </div>
+                </div>
             </footer>
             <!-- .footer -->
         </div>
