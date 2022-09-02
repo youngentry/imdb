@@ -1,3 +1,8 @@
+:root {
+    --gb: rgb(200, 200, 200);
+    --yc: #f5c518;
+}
+
 body {
     background: #1c1c1c;
     color: #fff;
@@ -7,7 +12,9 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
-
+.sectInter {
+    margin-bottom: 130px;
+}
 h2 {
     display: inline-block;
     font-size: 30px;
@@ -19,7 +26,7 @@ h2 i {
     transition: 0.2s;
 }
 h2:hover i {
-    color: #f5c518;
+    color: var(--yc);
     transform: translateX(5px);
 }
 h2 span {
@@ -48,7 +55,7 @@ h2 span {
     left: 50%;
     transform: translateX(-45%);
     font-size: 20px;
-    color: rgb(200, 200, 200);
+    color: var(--gb);
 }
 .bookmark:hover {
     border-top: 20px solid #f5c518;
@@ -64,7 +71,6 @@ h2 span {
  */
 .header {
     background: #121212;
-    color: #fff;
 }
 .header nav {
     display: flex;
@@ -141,10 +147,6 @@ h2 span {
 /* 
 .mainVisual
  */
-.mainVisual {
-    color: #fff;
-    margin-bottom: 130px;
-}
 .mainVisual .index {
     display: flex;
     justify-content: space-between;
@@ -154,9 +156,8 @@ h2 span {
 }
 .mainVisual .index .left {
     font-size: 15px;
-    color: rgb(200, 200, 200);
+    color: var(--gb);
 }
-
 .mainVisual .index .left span {
     margin: 0 5px;
     font-size: 13px;
@@ -213,7 +214,7 @@ h2 span {
 }
 .mainVisual .content .info i.star {
     margin-right: 5px;
-    color: #f5c518;
+    color: var(--yc);
 }
 .mainVisual .content .info i.tDown {
     margin-right: 5px;
@@ -225,7 +226,7 @@ h2 span {
 .mainVisual .popularity span {
     margin-left: 5px;
     font-size: 13px;
-    color: rgb(200, 200, 200);
+    color: var(--gb);
 }
 .mainVisual .content .left h2 {
     font-size: 36px;
@@ -306,7 +307,7 @@ h2 span {
     border: 2px solid #f5c518;
 }
 .mainVisual .visual .inner:hover i {
-    color: #f5c518;
+    color: var(--yc);
 }
 .mainVisual .visual .inner i {
     font-size: 50px;
@@ -538,9 +539,6 @@ h2 span {
 /* 
 .episodes
  */
-.episodes {
-    margin-bottom: 130px;
-}
 .episodes .content {
     margin-bottom: 40px;
 }
@@ -585,7 +583,7 @@ h2 span {
     margin-bottom: 30px;
     font-size: 13px;
     font-weight: 300;
-    color: rgb(200, 200, 200);
+    color: var(--gb);
 }
 .episodes .right a:hover {
     text-decoration: underline;
@@ -623,7 +621,7 @@ h2 span {
     margin-bottom: 10px;
 }
 .episodes .txt i {
-    color: #f5c518;
+    color: var(--yc);
     vertical-align: -10%;
 }
 .episodes .filter {
@@ -702,9 +700,6 @@ h2 span {
 /* 
 .gallery
  */
-.gallery {
-    margin-bottom: 130px;
-}
 .gallery ul {
     display: flex;
     gap: 30px;
@@ -744,7 +739,6 @@ h2 span {
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 }
-
 .gallery .inner {
     position: absolute;
     bottom: 0;
@@ -781,9 +775,6 @@ h2 span {
 /* 
 .cast
  */
-.cast {
-    margin-bottom: 130px;
-}
 .cast ul {
     display: flex;
     flex-wrap: wrap;
@@ -829,17 +820,17 @@ h2 span {
 .cast li span {
     font-size: 15px;
     font-weight: 100;
-    color: rgb(200, 200, 200);
+    color: var(--gb);
 }
 .cast li p {
     display: inline-block;
     font-size: 13px;
     font-weight: 100;
-    color: rgb(200, 200, 200);
+    color: var(--gb);
 }
 .cast li i {
     font-size: 13px;
-    color: rgb(200, 200, 200);
+    color: var(--gb);
 }
 .cast li a:hover {
     text-decoration: underline;
@@ -850,9 +841,6 @@ h2 span {
 
 /* 
 .reviews */
-.reviews {
-    margin-bottom: 130px;
-}
 .reviews .content ul {
     display: flex;
     gap: 30px;
@@ -892,7 +880,7 @@ h2 span {
 .reviews .content p {
     font-size: 15px;
     font-weight: 300;
-    color: rgb(200, 200, 200);
+    color: var(--gb);
     letter-spacing: -0.025;
 }
 .reviews .content .txt {
@@ -906,7 +894,7 @@ h2 span {
     margin-right: 20px;
 }
 .reviews .content .evaluate a:last-of-type i {
-    color: #f5c518;
+    color: var(--yc);
 }
 .reviews .info {
     display: flex;
@@ -933,7 +921,7 @@ h2 span {
 .reviews .content .userName {
     font-size: 12px;
     font-weight: 300;
-    color: rgb(200, 200, 200);
+    color: var(--gb);
 }
 .reviews .content .userName a {
     color: #5fafff;
@@ -1002,13 +990,13 @@ h2 span {
     vertical-align: 100%;
 }
 .similar .title .rate i {
-    color: #f5c518;
+    color: var(--yc);
 }
 .similar .genre {
     margin-bottom: 10px;
     font-size: 13px;
     font-weight: 100;
-    color: rgb(200, 200, 200);
+    color: var(--gb);
 }
 .similar .genre span ~ span::before {
     content: "";
@@ -1016,7 +1004,7 @@ h2 span {
     margin: 0 5px 0 1px;
     width: 2px;
     height: 2px;
-    background: rgb(200, 200, 200);
+    background: var(--gb);
     border-radius: 50%;
     vertical-align: 30%;
 }
@@ -1090,7 +1078,7 @@ footer {
 }
 .footer .left > div:hover h3,
 .footer .right:hover h3 {
-    color: #f5c518;
+    color: var(--yc);
 }
 .footer h3 {
     position: relative;
@@ -1257,7 +1245,7 @@ footer {
         transition: 0.2s;
     }
     h2:hover i {
-        color: #f5c518;
+        color: var(--yc);
         transform: translateX(5px);
     }
     h2 span {
@@ -1286,7 +1274,7 @@ footer {
         left: 50%;
         transform: translateX(-45%);
         font-size: 20px;
-        color: rgb(200, 200, 200);
+        color: var(--gb);
     }
     .bookmark:hover {
         border-top: 20px solid rgba(0, 0, 0, 0.7);
@@ -1392,7 +1380,7 @@ footer {
     }
     .mainVisual .index .left {
         font-size: 15px;
-        color: rgb(200, 200, 200);
+        color: var(--gb);
     }
 
     .mainVisual .index .left span {
@@ -1454,7 +1442,7 @@ footer {
     }
     .mainVisual .content .info i.star {
         margin-right: 5px;
-        color: #f5c518;
+        color: var(--yc);
     }
     .mainVisual .content .info i.tDown {
         margin-right: 5px;
@@ -1466,7 +1454,7 @@ footer {
     .mainVisual .popularity span {
         margin-left: 5px;
         font-size: 13px;
-        color: rgb(200, 200, 200);
+        color: var(--gb);
     }
     .mainVisual .content .left h2 {
         font-size: 30px;
@@ -1793,7 +1781,7 @@ footer {
         margin-bottom: 15px;
         font-size: 13px;
         font-weight: 300;
-        color: rgb(200, 200, 200);
+        color: var(--gb);
     }
     .episodes .right a:hover {
         text-decoration: underline;
@@ -1831,7 +1819,7 @@ footer {
         margin-bottom: 10px;
     }
     .episodes .txt i {
-        color: #f5c518;
+        color: var(--yc);
         vertical-align: -10%;
     }
     .episodes .filter {
@@ -1973,17 +1961,17 @@ footer {
     .cast li span {
         font-size: 13px;
         font-weight: 100;
-        color: rgb(200, 200, 200);
+        color: var(--gb);
     }
     .cast li p {
         display: inline-block;
         font-size: 11px;
         font-weight: 100;
-        color: rgb(200, 200, 200);
+        color: var(--gb);
     }
     .cast li i {
         font-size: 13px;
-        color: rgb(200, 200, 200);
+        color: var(--gb);
     }
     .cast li a:hover {
         text-decoration: underline;
@@ -2037,7 +2025,7 @@ footer {
     .reviews .content p {
         font-size: 13px;
         font-weight: 300;
-        color: rgb(200, 200, 200);
+        color: var(--gb);
         letter-spacing: -0.025;
     }
     .reviews .content .txt {
@@ -2051,7 +2039,7 @@ footer {
         margin-right: 10px;
     }
     .reviews .content .evaluate a:last-of-type i {
-        color: #f5c518;
+        color: var(--yc);
     }
     .reviews .info {
         display: flex;
@@ -2078,7 +2066,7 @@ footer {
     .reviews .content .userName {
         font-size: 12px;
         font-weight: 300;
-        color: rgb(200, 200, 200);
+        color: var(--gb);
     }
     .reviews .content .userName a {
         color: #5fafff;
@@ -2146,13 +2134,13 @@ footer {
         vertical-align: 100%;
     }
     .similar .title .rate i {
-        color: #f5c518;
+        color: var(--yc);
     }
     .similar .genre {
         margin-bottom: 10px;
         font-size: 13px;
         font-weight: 100;
-        color: rgb(200, 200, 200);
+        color: var(--gb);
     }
     .similar .genre span ~ span::before {
         content: "";
@@ -2160,7 +2148,7 @@ footer {
         margin: 0 5px 0 1px;
         width: 2px;
         height: 2px;
-        background: rgb(200, 200, 200);
+        background: var(--gb);
         border-radius: 50%;
         vertical-align: 30%;
     }
