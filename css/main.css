@@ -150,7 +150,7 @@ h2 span {
     justify-content: space-between;
     font-size: 13px;
     padding: 15px 0 5px 0;
-    line-height: 30px;
+    line-height: 20px;
 }
 .mainVisual .index .left {
     font-size: 15px;
@@ -183,7 +183,7 @@ h2 span {
     top: 50%;
     width: 1px;
     transform: translateY(-50%);
-    height: 50%;
+    height: 100%;
     background: #444;
 }
 .mainVisual .index .right li:last-of-type::after {
@@ -1435,7 +1435,7 @@ footer {
         background: #333;
     }
     .mainVisual .content {
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .mainVisual .content .info {
         display: flex;
